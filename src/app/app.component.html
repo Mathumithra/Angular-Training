@@ -1,54 +1,14 @@
 <section class="pricing py-5">
-
-  <div class="container">
-
-    <div class="row">
-
-      <div class="col-lg-4">
-
-        <app-price-card Free ="Free" 
-        price ="0$" 
-        User ="Single User" 
-        storage ="5GB Storage"
-        publicprojects="Unlimited Public Projects"
-        Access="Community Access"
-        privateprojects="Unlimited Private Projects"
-        support="Dedicate Phone Support" 
-        subdomain="Free Subdomain"
-       reports="Monthly Status Reports"></app-price-card>
-      </div>
-<div class="col-lg-4">
-
-  <app-price-card Free ="Plus" 
-  price ="9$" 
-  User = "5 Users"
-  storage="50GB Storage "
-  publicprojects="Unlimited Public Projects" 
-  Access="Community Access"
-  privateprojects="Unlimited Private Projects"
-  support="Dedicate phone Support"
-  subdomain="Free Subdomain" 
-  reports="Monthly Status Reports"></app-price-card>
-
+ <div class="container">
+<div class="row">
+<div *ngFor="let priceCard of priceCards" class="col-lg-4">
+<app-card [priceCardData]="priceCard"></app-card>
 </div>
-
-  <div class="col-lg-4">
-
-   <app-price-card Free ="Pro" 
-   price ="49$ " 
-   User ="Unlimited User" 
-   storage="150GB Storage"
-    publicprojects="Unlimited Public Projects"
-    Access="Community Access"
-    privateprojects="Unlimited Private Projects"
-    support="Dedicate phone Support"
-     subdomain=" Unlimited Free Subdomain" 
-  reports="Monthly Status Reports"></app-price-card>
-
 </div>
-
 </div>
-
-</div>
-
 </section>
+     <!--  <div *ngFor="let priceCard of priceCards" class="col-lg-3"> 
+        <app-card [priceCardData]="priceCard"></app-card>
+ 
+      </div>
+   -->
