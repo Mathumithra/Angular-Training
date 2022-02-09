@@ -11,11 +11,7 @@ interface PriceCard{
  support : string,
  subdomain : string,
  reports : string
-/*   id : Number,
-  category : String,
-  userType : String,
-  amount : String,
-  Validity : String */
+
 }
 @Component({
   selector: 'app-root',
@@ -60,29 +56,9 @@ export class AppComponent {
       subdomain:" Unlimited Free Subdomain" ,
    reports:"Monthly Status Reports"
   }
-  /* {
-    id : 1,
-    category : 'FREE',
-    userType : 'single user',
-    amount : '$0/month',
-    Validity : '15 days'
-  },*/
-  /*
-
-  {
-    id : 2,
-    category : 'PLUS',
-    userType : '5 Users',
-    amount : '$9/month',
-    Validity : '1 Year'
-  },*/
-  /*{
-    id : 3,
-    category : 'PRO',
-    userType : 'Unlimited Users',
-    amount : '$49/month',
-    Validity : '5 Years'
-  } */
+ 
+ 
+ 
 ]
 
 }

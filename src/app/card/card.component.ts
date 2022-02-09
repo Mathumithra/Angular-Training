@@ -11,11 +11,7 @@ interface PriceCard{
  support : string,
  subdomain : string,
  reports : string
-/*   id : Number,
-  category : String,
-  userType : String,
-  amount : String,
-  Validity : String */
+
 }
 @Component({
   selector: 'app-card',
@@ -38,11 +34,7 @@ export class CardComponent implements OnInit {
 
 
 
-   /*  id : 0,
-    category : '',
-    userType : '',
-    amount : '',
-    Validity : '' */
+
   }
 
   ngOnInit(): void {
